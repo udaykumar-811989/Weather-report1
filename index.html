@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Weather Report</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Global Weather Report</h1>
+        <p>Get complete weather information for any city worldwide</p>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name or country (e.g., London, Tokyo, New York)" />
+            <button onclick="getWeather()">🔍 Get Weather</button>
+        </div>
+        <div id="weatherResult" class="hidden">
+            <h2 id="location"></h2>
+            <p id="localTime"></p>
+            <div class="main-info">
+                <h3 id="temperature"></h3>
+                <p id="description"></p>
+                <div class="details">
+                    <div><strong>Visibility:</strong> <span id="visibility"></span></div>
+                    <div><strong>Humidity:</strong> <span id="humidity"></span></div>
+                    <div><strong>Wind:</strong> <span id="wind"></span></div>
+                    <div><strong>Pressure:</strong> <span id="pressure"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>🌐 Search for any city or country to get real-time weather information</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
